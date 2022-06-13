@@ -6,4 +6,9 @@ spring:
   cloud:
     config:
       profile: dev
-
+  jpa.hibernate.ddl-auto: update
+  datasource:
+    url: jdbc:mysql://localhost:3306/db-movies-service?createDatabaseIfNotExist=true&serverTimezone=UTC
+    username:
+    password:
+    driver-class-name: com.mysql.cj.jdbc.Driver
