@@ -23,6 +23,6 @@ public class MovieService {
 	}
 
 	public List<Movie> listarPorGenero(String genre){
-		return movieRepository.findByGenre(genre);
+		return movieRepository.findByGenreIgnoreCase(genre);
 	}
 }
